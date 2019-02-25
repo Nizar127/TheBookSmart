@@ -28,6 +28,7 @@
         <activity android:name=".ListBusinessActivity" />
         <activity android:name=".manage_booking" />
         <activity android:name=".manage_business" />
+        <activity android:name=".BlockDataActivity"></activity>
     </application>
 
 </manifest>
