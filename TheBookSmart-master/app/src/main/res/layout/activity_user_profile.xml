@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_profile">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/traveller"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp">
+
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:src="@drawable/traveller" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorSecondary"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <!--<Scrollview></Scrollview>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/getbusinessname"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:text="Your Business Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/businessdetails"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/getbusinessname"
+            android:layout_marginLeft="5dp"
+            android:text="Description : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/getbusinessdetails"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/getbusinessname"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/businessdetails" />
+
+        <TextView
+            android:id="@+id/businessproduct"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/getbusinessname"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:text="Main Business : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/getbusinessproduct"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/getbusinessdetails"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/businessproduct" />
+
+        <TextView
+            android:id="@+id/businesstype"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/getbusinessproduct"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:text="Business Type: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/getbusinesstype"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/getbusinessproduct"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/businesstype" />
+
+        <ImageView
+            android:id="@+id/imgBiz1"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/businesstype"
+            android:layout_margin="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/traveller" />
+
+        <ImageView
+            android:id="@+id/imgBiz2"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/businesstype"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/imgBiz1"
+            android:scaleType="centerInside"
+            android:src="@drawable/traveller" />
+
+        <ImageView
+            android:id="@+id/imgBiz3"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/businesstype"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/imgBiz2"
+            android:scaleType="centerInside"
+            android:src="@drawable/traveller" />
+
+        <ImageView
+            android:id="@+id/imgBiz4"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/businesstype"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/imgBiz3"
+            android:scaleType="centerInside"
+            android:src="@drawable/traveller" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="186dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="About" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="Package" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="Statistics" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="Friends" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

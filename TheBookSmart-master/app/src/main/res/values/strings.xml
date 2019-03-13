@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">BookSmart</string>
+    <string name="check_in">Check In</string>
+    <string name="list_business">List My Business</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="loading">loading...</string>
+    <string name="get_biz_description" />
+    <string name="get_biz_title" />
+    <string-array name="business_class">
+
+        <item>Fixed Location</item>
+        <item>Subscription</item>
+        <item>Delivery</item>
+    </string-array>
+</resources>

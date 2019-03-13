@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:text="Book The Business Now"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/bizName"
+        android:layout_width="125dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="108dp"
+        android:text="Business Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="174dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/bizName"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+
+    <TextView
+        android:id="@+id/bizDetails"
+        android:layout_width="139dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/bizName"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Details"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editDetails"
+        android:layout_width="172dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/Name"
+        android:layout_toRightOf="@id/bizDetails"
+        android:inputType="text"
+        android:text="Details" />
+
+
+    <TextView
+        android:id="@+id/MainProduct"
+        android:layout_width="127dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/bizDetails"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="15dp"
+        android:text="Main Product"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/editProduct"
+        android:layout_width="171dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/editDetails"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/MainProduct"
+        android:inputType="textPersonName"
+        android:text="product" />
+
+    <TextView
+        android:id="@+id/keywordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainProduct"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="38dp"
+        android:text="Business Keyword"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editKeyword"
+        android:layout_width="161dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/editProduct"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/keywordView"
+        android:inputType="textPersonName"
+        android:text="product" />
+
+
+
+
+      <TextView
+        android:id="@+id/CategoryView"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/keywordView"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:text="Category"
+        android:textSize="18sp" />
+
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/editKeyword"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:spinnerMode="dialog"
+
+        >
+
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/listBiz_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CategoryView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorSecondary"
+        android:onClick="formInsert"
+        android:text="Book Now" />
+
+</RelativeLayout>

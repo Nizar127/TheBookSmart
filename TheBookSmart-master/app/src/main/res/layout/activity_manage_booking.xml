@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage_booking">
+
+
+    <TextView
+        android:id="@+id/manage_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="60dp"
+        android:text="Manage Booking"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Package Name"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Period"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Status"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Check in"
+                    />
+
+
+
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

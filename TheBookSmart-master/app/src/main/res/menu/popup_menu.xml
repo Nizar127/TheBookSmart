@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fixed_location"
+        android:title="Fixed Location"/>
+    <item
+    android:id="@+id/subscription"
+    android:title="Subscription"/>
+    <item
+        android:id="@+id/delivery"
+        android:title="Delivery"/>
+</menu>
